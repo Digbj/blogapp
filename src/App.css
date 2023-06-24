@@ -36,3 +36,813 @@
     transform: rotate(360deg);
   }
 }
+
+/*------------------------------------------------NAv-------------------------*/
+
+.container{
+
+  width: 100%;
+  height: 4rem;
+  background-color:black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: azure;
+}
+#A1{
+  margin: 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: azure;
+  margin-left: 40px;
+}
+#A1>#S2{
+  
+  font-weight:600;
+}
+.container>div>span{
+font-size: 2rem;
+}
+#S1{
+  font-weight:600;
+}
+
+#A1>div{
+  /* margin: 2rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container>div{
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container>div>li{
+  list-style-type:none;
+  margin: 2rem;
+  font-size: large;
+}
+.container>div>li:hover{
+  /* border: 1px solid azure; */
+  cursor: pointer;
+ 
+  box-shadow: rgba(230, 225, 225, 0.09) 0px 2px 1px, rgba(239, 229, 229, 0.09) 0px 4px 2px, rgba(215, 208, 208, 0.09) 0px 8px 4px, rgba(225, 221, 221, 0.09) 0px 16px 8px, rgba(214, 211, 211, 0.09) 0px 32px 16px;
+
+}
+
+/*-------------------------------------------MAin--------------------------*/
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  border: 1px solid black;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/370/608/909/background-earth-continents-world-map-hd-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.main>p{
+  font-size:2rem;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(247, 247, 247);
+  text-shadow: 3px 3px #131313 ;
+  
+}
+.mainb{
+  margin: 2rem;
+  height: 3rem;
+  width: 7rem;
+  font-size: medium;
+  border-radius: 1rem;
+  border: none;
+  background-color: #131313;
+  color: azure;
+}
+.mainb:hover{
+  cursor: pointer;
+ 
+  background-color:transparent;
+  color: azure;
+  border: 1px solid azure;
+}
+
+/*--------------------------------Contact--------------------------------*/
+.cont{
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1e1e;
+  color: white;
+}
+.cont>div{
+
+  width: 30%;
+  margin: 1rem;
+}
+/* .W1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+} */
+.cont>div>p{
+  color: #929497;
+  text-align: center;
+  padding: 5px;
+}
+#inpt{
+  background: #000;
+  height: 2rem;
+  color: azure;
+}
+#icons>a{
+  margin: 1rem;
+  color: azure;
+  /* gap: 1rem; */
+}
+
+/*====================Footer==============================================*/
+.foot{
+  margin-top: 0;
+  background-color: #000;
+  color: azure;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*-------------------------------------------POST---------------------------*/
+.post{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left{
+  width: 65%;
+}
+.left>h3{
+  text-align: left;
+}
+.mypost{
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#postimg{
+  margin: 10px;
+  height: 250px;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 4px solid rgb(145, 140, 140);
+  border-radius: 10px;
+}
+#postimg>img{
+  border-top-left-radius:7px;
+  border-top-right-radius:7px;
+  height: 150px;
+  width: 220px;
+}
+#postimg>p,h3{
+margin-top: 2px;
+}
+#postimg>h3{
+  font-size: small;
+}
+#postimg>p{
+  font-weight: 100;
+}
+#postimg:hover{
+  cursor: pointer;
+  transition: transform .19s;
+  transform: scale(1.05);
+}
+
+.btn:hover{
+  cursor: pointer;
+ 
+  background-color:transparent;
+  color: rgb(11, 11, 11);
+  border: 1px solid rgb(8, 8, 8);
+}
+.btn{
+  float: left;
+  margin: 2rem;
+  height: 3rem;
+  width: 7rem;
+  font-size: medium;
+  border-radius: 1rem;
+  border: none;
+  background-color: #131313;
+  color: azure;
+}
+
+
+/*-----------------random --------------------------------*/
+.right{
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  /* margin: 10px; */
+  /* background-color: bisque; */
+  width: 30%;
+}
+.random{
+ 
+  /* margin: 20px; */
+  height: 280px;
+  width: 280px;
+  border: 3px solid rgb(127, 125, 125);
+  border-radius: 10px;
+  background-color: bisque;
+  
+}
+.random:hover{
+  cursor: pointer;
+}
+.fav{
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+  width: 440px;
+  height: 160vh;
+}
+.random:hover{
+  cursor: pointer;
+  transition: transform .19s;
+  transform: scale(1.05);
+}
+.pp{
+  padding: 5px;
+  text-align: justify;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+  0px -4px 10px rgba(255,255,255,0.3);
+}
+.t{
+  text-shadow: 3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+}
+/*---------------------------------more Post----------------------------------*/
+.abtn:hover{
+  cursor: pointer;
+ 
+  background-color:transparent;
+  color: rgb(11, 11, 11);
+  border: 1px solid rgb(8, 8, 8);
+}
+.abtn{
+  /* float: left; */
+  margin: 2rem;
+  height: 3rem;
+  width: 7rem;
+  font-size: medium;
+  border-radius: 1rem;
+  border: none;
+  background-color: #131313;
+  color: azure;
+}
+
+/*---------------------------------------------More---------------------------*/
+
+.all{
+margin: 2rem;
+}
+.but{
+  margin: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.b2{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem;
+  height: 3rem;
+  width: 7rem;
+  font-size: medium;
+  border-radius: 1rem;
+  border: none;
+  background-color: #131313;
+  color: azure;
+}
+ .b2:hover{
+  cursor: pointer;
+ text-decoration: none;
+  background-color:transparent;
+  color: rgb(11, 11, 11);
+  border: 1px solid rgb(8, 8, 8);
+}
+.b1{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  margin: 2rem;
+  height: 3rem;
+  width: 7rem;
+  font-size: medium;
+  border-radius: 1rem;
+  border: none;
+  background-color: #131313;
+  color: azure;
+}
+ .b1:hover{
+  cursor: pointer;
+  text-decoration: none;
+  background-color:transparent;
+  color: rgb(11, 11, 11);
+  border: 1px solid rgb(8, 8, 8);
+}
+
+.det{
+  display: flex;
+  margin: 20px;
+  /* border: 1px solid black; */
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: small;
+  font-weight: 200;
+}
+.det>h2{
+  margin: 3px;
+}
+#mail{
+  font-weight: 100;
+}
+
+
+
+/*-------------------------------Commments--------------------------------*/
+.A{
+gap: 10px;
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: left;
+}
+.A>span>h3,p{
+  margin: 0;
+  text-align: left;
+}
+.A>span>p{
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+#co{
+  font-weight: 100;
+}
+#ava{
+  height: 2rem;
+  width: 2rem;
+
+}
+.comments>h3{
+  text-align: left;
+  margin: 20px;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+.link>p{
+  margin: 10px;
+  text-align: justify;
+ 
+}
+.link1{
+  list-style-type:none;
+  margin: 2rem;
+  font-size: large;
+  text-decoration: none;
+  color:azure;
+}
+.link1:hover{
+  /* border: 1px solid azure; */
+  cursor: pointer;
+ 
+  box-shadow: rgba(230, 225, 225, 0.09) 0px 2px 1px, rgba(239, 229, 229, 0.09) 0px 4px 2px, rgba(215, 208, 208, 0.09) 0px 8px 4px, rgba(225, 221, 221, 0.09) 0px 16px 8px, rgba(214, 211, 211, 0.09) 0px 32px 16px;
+
+}
+
+
+/*____________________________fab_________________________________*/
+.fab12{
+
+  height: 70vh;
+}
+
+
+@media (max-width: 768px) {
+  /* Container */
+.container {
+  width: 100%;
+  height: 4rem;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: azure;
+}
+
+#A1 {
+  margin: 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: azure;
+  margin-left: 40px;
+}
+
+#A1 > #S2 {
+  font-weight: 600;
+}
+
+.container > div > span {
+  font-size: 2rem;
+}
+
+#S1 {
+  font-weight: 600;
+}
+
+#A1 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div > li {
+  list-style-type: none;
+  margin: 2rem;
+  font-size: large;
+}
+
+.container > div > li:hover {
+  cursor: pointer;
+  box-shadow: rgba(230, 225, 225, 0.09) 0px 2px 1px, rgba(239, 229, 229, 0.09) 0px 4px 2px, rgba(215, 208, 208, 0.09) 0px 8px 4px, rgba(225, 221, 221, 0.09) 0px 16px 8px, rgba(214, 211, 211, 0.09) 0px 32px 16px;
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  border: 1px solid black;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/370/608/909/background-earth-continents-world-map-hd-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main > p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(247, 247, 247);
+  text-shadow: 3px 3px #131313;
+}
+
+.mainb {
+  margin: 2rem;
+  height: 3rem;
+  width: 7rem;
+  font-size: medium;
+  border-radius: 1rem;
+  border: none;
+  background-color: #131313;
+  color: azure;
+}
+
+.mainb:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: azure;
+  border: 1px solid azure;
+}
+
+/* Contact */
+.cont {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1e1e;
+  color: white;
+}
+
+.cont > div {
+  width: 30%;
+  margin: 1rem;
+}
+
+.cont > div > p {
+  color: #929497;
+  text-align: center;
+  padding: 5px;
+}
+
+#inpt {
+  background: #000;
+  height: 2rem;
+  color: azure;
+}
+
+#icons > a {
+  margin: 1rem;
+  color: azure;
+}
+
+/* Footer */
+.foot {
+  margin-top: 0;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: large;
+}
+
+  
+}
+
+
+
+@media (max-width: 480px) {
+/* Container */
+.container {
+  width: 100%;
+  height: 4rem;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: azure;
+}
+
+#A1 {
+  margin: 0.5rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: azure;
+  margin-left: 40px;
+}
+
+#A1 > #S2 {
+  font-weight: 600;
+}
+
+.container > div > span {
+  font-size: 2rem;
+}
+
+#S1 {
+  font-weight: 600;
+}
+
+#A1 > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > div > li {
+  list-style-type: none;
+  margin: 2rem;
+  font-size: large;
+}
+
+.container > div > li:hover {
+  cursor: pointer;
+  box-shadow: rgba(230, 225, 225, 0.09) 0px 2px 1px, rgba(239, 229, 229, 0.09) 0px 4px 2px, rgba(215, 208, 208, 0.09) 0px 8px 4px, rgba(225, 221, 221, 0.09) 0px 16px 8px, rgba(214, 211, 211, 0.09) 0px 32px 16px;
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  border: 1px solid black;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/370/608/909/background-earth-continents-world-map-hd-wallpaper-preview.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main > p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(247, 247, 247);
+  text-shadow: 3px 3px #131313;
+}
+
+.mainb {
+  margin: 2rem;
+  height: 3rem;
+  width: 7rem;
+  font-size: medium;
+  border-radius: 1rem;
+  border: none;
+  background-color: #131313;
+  color: azure;
+}
+
+.mainb:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: azure;
+  border: 1px solid azure;
+}
+
+/* Contact */
+.cont {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1e1e;
+  color: white;
+}
+
+.cont > div {
+  width: 30%;
+  margin: 1rem;
+}
+
+.cont > div > p {
+  color: #929497;
+  text-align: center;
+  padding: 5px;
+}
+
+#inpt {
+  background: #000;
+  height: 2rem;
+  color: azure;
+}
+
+#icons > a {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: #929497;
+  font-size: 1.5rem;
+}
+
+#icons > a:hover {
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-size: large;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #A1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+
+  #A1 > #S2 {
+    display: none;
+  }
+
+  .container > div > span {
+    font-size: 1.5rem;
+  }
+
+  #S1 {
+    display: none;
+  }
+
+  .container > div {
+    margin: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container > div > li {
+    margin: 1rem 0;
+    font-size: medium;
+  }
+
+  .main {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #A1 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  #A1 > #S2 {
+    display: none;
+  }
+
+  .container > div > span {
+    font-size: 1.2rem;
+  }
+
+  #S1 {
+    display: none;
+  }
+
+  .container > div {
+    margin: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container > div > li {
+    margin: 1rem 0;
+    font-size: small;
+  }
+
+  .main {
+    height: 60vh;
+  }
+
+  .main > p {
+    font-size: 1.5rem;
+  }
+
+  .mainb {
+    height: 2.5rem;
+    width: 6rem;
+    font-size: small;
+  }
+
+  .cont > div > p {
+    font-size: small;
+  }
+
+  #icons > a {
+    font-size: 1.2rem;
+  }
+
+  .footer {
+    padding: 1rem;
+    font-size: medium;
+  }
+}
+
+}
