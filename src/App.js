@@ -10,10 +10,11 @@ import Post from './Components/post';
 import FullPost from './Components/fullpost';
 import Favourite from './Components/fav';
 import Fav from './Components/fav';
-
+import { FavouritesProvider } from './Components/fabcontext';
 function App() {
   return (
     <div className="App">
+      <FavouritesProvider>
       <Router>
       <Navigation/>
         <Routes>
@@ -27,7 +28,7 @@ function App() {
         <Contact/>
       <Footer/>
       </Router>
-      
+      </FavouritesProvider>
       
     </div>
   );

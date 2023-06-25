@@ -12,11 +12,11 @@ const Navigation = () => {
 
   return (
     <div className="container">
-     <Link to='/' id='A1'><div>
+     <Link to='/' id='A1'><div className='CC'>
         <span id="S1">Prime</span>
         <span id="S2">Blog</span>
       </div></Link> 
-      <div>
+      <div className='uti'>
         <li onClick={() => scrollToSection('about')}>About</li>
     <Link to='/favu' className='link1'><li>Favorites</li></Link>  
         <li onClick={() => scrollToSection('about')}>Contact Us</li>

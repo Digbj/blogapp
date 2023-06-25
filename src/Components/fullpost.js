@@ -1,22 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
 import { AiOutlineArrowLeft, AiOutlineHeart } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Fav from "./fav";
+import { FavouritesContext } from "./fabcontext";
+
 const FullPost = () => {
   const [post, setPost] = useState(null);
   const [aut, setAut] = useState({});
   const [comm, setComm] = useState([]);
-  const [favourites, setFavourites] = useState(() => {
-    const storedFavourites = localStorage.getItem("favourites");
-    return storedFavourites ? JSON.parse(storedFavourites) : [];
-  });
   const { id } = useParams();
 
-  useEffect(() => {
-    localStorage.setItem("favourites", JSON.stringify(favourites));
-  }, [favourites]);
+  const { addToFavourites } = useContext(FavouritesContext);
   
   useEffect(() => {
     fetchData();
@@ -65,7 +60,7 @@ const FullPost = () => {
     return <p>Loading post...</p>;
   }
   const handleFavourite = () => {
-    setFavourites((prevFavourites) => [...prevFavourites, post]);
+    addToFavourites(post);
   };
 
   return (
@@ -111,7 +106,6 @@ const FullPost = () => {
           );
         })}
       </div>
-      <Fav favourites={favourites} />
     </div>
   );
 };

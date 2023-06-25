@@ -450,8 +450,16 @@ justify-content: left;
 
 /*____________________________fab_________________________________*/
 .fab12{
-
+display: flex;
+flex-direction: column;
+align-items: center;
+/* justify-content: center; */
   height: 70vh;
+}
+.li{
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
 }
 
 
@@ -602,7 +610,7 @@ justify-content: left;
 /* Container */
 .container {
   width: 100%;
-  height: 4rem;
+  height: 1rem;
   background-color: black;
   display: flex;
   flex-direction: row;
@@ -612,22 +620,22 @@ justify-content: left;
 
 #A1 {
   margin: 0.5rem;
-  font-size: 2rem;
+  font-size: 0.5rem;
   text-decoration: none;
   color: azure;
   margin-left: 40px;
 }
 
 #A1 > #S2 {
-  font-weight: 600;
+  font-weight: 100;
 }
 
 .container > div > span {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 #S1 {
-  font-weight: 600;
+  font-weight: 100;
 }
 
 #A1 > div {
@@ -637,7 +645,7 @@ justify-content: left;
 }
 
 .container > div {
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -645,7 +653,7 @@ justify-content: left;
 
 .container > div > li {
   list-style-type: none;
-  margin: 2rem;
+  margin: 1rem;
   font-size: large;
 }
 
@@ -660,7 +668,7 @@ justify-content: left;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90vh;
+  height: 50vh;
   border: 1px solid black;
   background-image: url('https://c4.wallpaperflare.com/wallpaper/370/608/909/background-earth-continents-world-map-hd-wallpaper-preview.jpg');
   background-repeat: no-repeat;
@@ -668,17 +676,17 @@ justify-content: left;
 }
 
 .main > p {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 300;
   margin: 0;
   color: rgb(247, 247, 247);
   text-shadow: 3px 3px #131313;
 }
 
 .mainb {
-  margin: 2rem;
-  height: 3rem;
-  width: 7rem;
+  margin: 1rem;
+  height: 1rem;
+  width: 2rem;
   font-size: medium;
   border-radius: 1rem;
   border: none;
@@ -785,44 +793,55 @@ justify-content: left;
 @media (max-width: 480px) {
   .container {
     flex-direction: column;
-    height: auto;
+    height: 50px;
+  }
+  .uti{
+    visibility: hidden;
   }
 
   #A1 {
-    margin: 1rem;
-    font-size: 1.2rem;
+    margin: 0.5rem;
+    font-size: 1rem;
     margin-left: 0;
   }
-
-  #A1 > #S2 {
-    display: none;
-  }
+#S1{
+  color: azure;
+}
 
   .container > div > span {
-    font-size: 1.2rem;
+    font-size: 0.5rem;
   }
 
-  #S1 {
-    display: none;
-  }
+ 
 
   .container > div {
-    margin: 1rem;
+    margin: 0.5rem;
     flex-direction: column;
     align-items: flex-start;
   }
-
+.right{
+  visibility: hidden;
+}
   .container > div > li {
     margin: 1rem 0;
     font-size: small;
   }
 
   .main {
-    height: 60vh;
+    height: 30vh;
   }
-
+  .cont{
+    height: 250px;
+  }
+  #inpt{
+    height: 20px;
+    width: 50px;
+  }
+.W1{
+  font-size:0.5;
+}
   .main > p {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
   }
 
   .mainb {
@@ -836,12 +855,12 @@ justify-content: left;
   }
 
   #icons > a {
-    font-size: 1.2rem;
+    font-size: 0.5rem;
   }
 
-  .footer {
-    padding: 1rem;
-    font-size: medium;
+  .foot {
+    padding: 0.3rem;
+    font-size: 10px;
   }
 }
 
